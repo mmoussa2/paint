@@ -9,19 +9,19 @@
   - Javascript
  
 ## Implementation:
-  Day 1:
+ ### Day 1:
     - create repository on github
     - setup all features for this project
-  Day2:
+ ### Day2:
     - creating a borad
     - add some style to the board
-  Day3:
+ ### Day3:
     - create color feature and size of pen
     - continue styling the baord 
-  Day4:
+ ### Day4:
     - working on rest and save feature
     - add styling
-  Day5:
+ ### Day5:
     - finsih styling and test the board
     - deploy the app
     
