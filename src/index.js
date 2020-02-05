@@ -24,6 +24,12 @@ ctx.lineWidth = mySize;
 
 var saveLink = document.getElementById("saveLink");
 
+brush.style.border ="2px solid red";
+canvas.style.cursor = "pointer";
+canvas.addEventListener("mousedown", brushDown, false);
+canvas.addEventListener("mousemove", brushMove, false);
+canvas.addEventListener("mouseup", brushUp, false);
+
 color.addEventListener('change', colorChange);
 
 function colorChange(){
@@ -107,7 +113,6 @@ function resetClick(){
 
 function saveClick(){
   var data = canvas.toDataURL();
-  console.log(data)
   saveLink.href = data;
   saveLink.download = "paint.png";
 }
