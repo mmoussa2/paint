@@ -156,8 +156,6 @@ body{
 #canvas{
 	display:block;
 	border: 1px solid red;
-	width:600px;
-	height: 600px;
 }
 #myColor{
 		width: 22px;

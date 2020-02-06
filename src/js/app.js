@@ -29,7 +29,8 @@ document.querySelectorAll("[data-tool]").forEach(
   item =>{
     item.addEventListener("click", e => {
       document.querySelector("[data-tool].active").classList.toggle("active");
-       item.classList.toggle("active");
+      item.classList.toggle("active");
+      
       let selectedTool = item.getAttribute("data-tool");
       paint.activeTool = selectedTool;
 
