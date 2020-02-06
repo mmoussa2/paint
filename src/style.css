@@ -1,98 +1,3 @@
-/* 
-* {
-  box-sizing: border-box;
-  user-select: none;
-} 
-
-body {
-margin: 0;
-
-}
-
-canvas{
-  display:block;
-  border: 1px solid red;
-}
-
-#toolbar {
-  width: 100%;
-  padding: 10px;
-  position:absolute;
-  top: 0;
-  background-color: #2f2f2f;
-  overflow: auto;
-}
-
-#colors {
-  position: relative;
-  float: left;
-  margin-left: 20px;
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:white;
-  white-space: nowrap;
-}
-
-#range {
-  position: relative;
-  float: left;
-  margin-right: 20px;
-  font-size: 20px;
-  font-weight: 500;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color:white;
-  white-space: nowrap;
-}
-
-#myColor, #myRange{
-  cursor: pointer;
-}
-
-#brush, #erase{
-  position: relative;
-  float: left;
-  height: 30px;
-  width: 40px;
-  background-color: white;
-  text-align: center;
-  cursor: pointer;
-}
-
-#brush{
-  margin-right: 20px;
-}
-
-#reset, #save{
-  position: relative;
-  float: right;
-  font-size: 20px;
-  font-weight: 500;
-  background-color: white;
-  color: #4f4f4f;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-}
-
-#reset{
-  height:30px;
-  width: 70px;
-  margin-right: 15px;
-}
-
-#save{
-  height:30px;
-  width: 60px;
-  margin-right: 10px;
-}
-
-canvas{
-    border: 1px solid red;
-    width: 500px;
-    height: 600px;
-} */
 
 
 * {
@@ -107,36 +12,37 @@ canvas{
 	user-select: none;
 }
 
-body {
-	margin: 0;
+ /* body {
+  margin: 0;
+  
 }
 
 canvas {
 	display: block;
-}
+} 
 
-#toolbar {
+ #toolbar {
 	width: 100%;
 	padding: 10px;
 	position: absolute;
 	top: 0;
-	background-color: #2f2f2f;
+  background-color: #3a4b4b;
 	overflow: auto;
-}
+} 
 
-#colors {
+ #colors {
 	position: relative;
 	float: left;
 	margin-left: 20px;
 	margin-right: 20px;
-	font-size: 20px;
+	font-size: 10px;
 	font-weight: 500;
 	font-family: Verdana;
 	color: white;
 	white-space: nowrap;
-}
+} 
 
-#range {
+ #range {
 	position: relative;
 	float: left;
 	font-size: 20px;
@@ -145,10 +51,13 @@ canvas {
 	color: white;
 	white-space: nowrap;
 	margin-right: 20px;
-}
+} 
 
-#myColor, #myRange {
-	cursor: pointer;
+ #myColor, #myRange {
+  cursor: pointer;
+}
+#myColor{
+    width: 22px;
 }
 
 #brush, #erase {
@@ -188,4 +97,71 @@ canvas {
 	height: 30px;
 	width: 63px;
 	margin-right: 10px;
+}  */
+
+/* here the additional features: */
+
+body{
+	margin: 0;
 }
+
+.toolbox{
+  height:100vh;
+  position: absolute;
+	background-color: #3a4b4b;
+}
+
+
+
+.toolbox .group.linewidths .item{
+  position: relative;
+}
+
+.toolbox .group.linewidths .item .linewidth{
+  position: absolute;
+	background-color: white;
+	border-radius: 50%;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+
+.toolbox.left{
+  left:0px;
+  top:0px;
+  /* width: 50px; */
+}
+
+.toolbox .group{
+  border-bottom: thin solid gray;
+}
+
+.toolbox .group .item{
+  width:40px;
+  height:40px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.toolbox .group .item:hover, .toolbox .group .item.active{
+  background-color: #4b6161;
+}
+
+.toolbox .group .item img{
+  width:100%;
+  filter: invert()
+}
+
+#canvas{
+	display:block;
+	border: 1px solid red;
+	width:600px;
+	height: 600px;
+}
+#myColor{
+		width: 22px;
+		cursor: pointer;
+}
+
+
