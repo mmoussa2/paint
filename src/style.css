@@ -111,8 +111,6 @@ body{
 	background-color: #3a4b4b;
 }
 
-
-
 .toolbox .group.linewidths .item{
   position: relative;
 }
@@ -155,11 +153,30 @@ body{
 
 #canvas{
 	display:block;
-	border: 1px solid red;
+ border-image: repeating-linear-gradient(45deg, #f33, #3bf, #f33 30px) 60;
+
 }
 #myColor{
 		width: 22px;
 		cursor: pointer;
+}
+
+
+ #toolbar {
+	width: 100%;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+  background-color: #3a4b4b;
+	overflow: auto;
+} 
+
+#reset {
+	position: relative;
+	float: right;
+	height: 30px;
+	width: 70px;
+	margin-right: 15px;
 }
 
 
