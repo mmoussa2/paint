@@ -179,4 +179,20 @@ body{
 	margin-right: 15px;
 }
 
+.separator{
+	width:200px
+}
+
+.images{
+	position: relative;
+	top:10px;
+	left:100px;
+
+}
+.border{
+	position: absolute;
+	top:10px;
+	left:200px;
+}
+
 

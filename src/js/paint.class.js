@@ -87,8 +87,8 @@ export default class Paint {
         break;
        case TOOL_ERASER:
         this.context.clearRect(this.currentPos.x, this.currentPos.y, this._brushSize, this._brushSize);
-      case TOOL_PAINT_BUCKET:
-        this.draw(this.currentPos.x, this.currentPos.y)
+      // case TOOL_PAINT_BUCKET:
+      //   this.draw(this.currentPos.x, this.currentPos.y)
         default:
           break;
     }
