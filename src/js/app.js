@@ -19,7 +19,7 @@ paint.selectedColor = "#000000"
 paint.init();
 
 
-document.querySelectorAll("[data-command").forEach(
+document.querySelectorAll("[data-command]").forEach(
   item =>{
     item.addEventListener("click", e =>{
       let command = item.getAttribute("data-command");
@@ -47,7 +47,7 @@ document.querySelectorAll("[data-tool]").forEach(
       
       let selectedTool = item.getAttribute("data-tool");
       paint.activeTool = selectedTool;
-
+     
        switch(selectedTool){
          case TOOL_LINE:
          case TOOL_RECTANGLE:
@@ -70,7 +70,7 @@ document.querySelectorAll("[data-tool]").forEach(
   }
 );
 
-document.querySelectorAll("[data-line-width").forEach(
+document.querySelectorAll("[data-line-width]").forEach(
   item => { 
     item.addEventListener("click", e => {
        document.querySelector("[data-line-width].active").classList.toggle("active");
@@ -82,7 +82,7 @@ document.querySelectorAll("[data-line-width").forEach(
   }
 );
 
-document.querySelectorAll("[data-brush-size").forEach(
+document.querySelectorAll("[data-brush-size]").forEach(
   item => {
     item.addEventListener("click", e => {
       document.querySelector("[data-brush-size].active").classList.toggle("active");

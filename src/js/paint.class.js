@@ -64,9 +64,9 @@ export default class Paint {
       this.context.clearRect(this.startPos.x, this.startPos.y, this._brushSize, this._brushSize);
     }
     else if (this.tool == TOOL_PAINT_BUCKET) {
-      // new Fill(this.canvas, this.startPos, this.color)
-      // this.context.beginPath();
-      // this.context.moveTo(this.startPos.x, this.startPos.y);
+      new Fill(this.canvas, this.startPos, this.color);
+      this.context.beginPath();
+      this.context.moveTo(this.startPos.x, this.startPos.y);
     }
   }
 
