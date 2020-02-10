@@ -1,6 +1,7 @@
 # Paint
   Can draw and erase on board, have option to select color, size of pen,
   and save an image, and there is rest button to wipe the board  
+  [Live Demo](https://mmoussa2.github.io/paint/)
 
 ## Technologies:
   - HTML
