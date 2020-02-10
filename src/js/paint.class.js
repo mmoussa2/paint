@@ -64,10 +64,11 @@ export default class Paint {
       this.context.clearRect(this.startPos.x, this.startPos.y, this._brushSize, this._brushSize);
     }
     else if (this.tool == TOOL_PAINT_BUCKET) {
-      new Fill(this.canvas, this.startPos, this.color);
-      this.context.beginPath();
-      this.context.moveTo(this.startPos.x, this.startPos.y);
+      // new Fill(this.canvas, this.startPos, this.color);
+      // this.context.beginPath();
+      // this.context.moveTo(this.startPos.x, this.startPos.y);
     }
+   
   }
 
   onMouseMove(e){
@@ -77,6 +78,7 @@ export default class Paint {
       case TOOL_RECTANGLE:
       case TOOL_CIRCLE:
       case TOOL_TRIANGLE:
+      case TOOL_PAINT_BUCKET:
         this.drawShape();
         break;
       case TOOL_PENCIL:
@@ -87,8 +89,6 @@ export default class Paint {
         break;
        case TOOL_ERASER:
         this.context.clearRect(this.currentPos.x, this.currentPos.y, this._brushSize, this._brushSize);
-      // case TOOL_PAINT_BUCKET:
-      //   this.draw(this.currentPos.x, this.currentPos.y)
         default:
           break;
     }
@@ -134,21 +134,6 @@ export default class Paint {
     }
   }
 
-
- draw(start, end) {
-  var ctx = document.getElementById('canvas').getContext('2d');
-  //  ctx.drawImage(document.getElementById('source'),33, 71, 104, 124, 21, 20, 87, 104);
-   ctx.drawImage(document.getElementById('source'), start, end);
-  // var img = new Image();
-  // img.onload = function () {
-  //   for (var i = 0; i < 4; i++) {
-  //     for (var j = 0; j < 3; j++) {
-  //       ctx.drawImage(img, j * 50, i * 38, 50, 38);
-  //     }
-  //   }
-  // };
-  // img.src = 'https://mdn.mozillademos.org/files/5397/rhino.jpg';
-}
 
 
 }
