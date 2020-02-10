@@ -7,6 +7,7 @@
   - CSS
   - Canvas
   - Javascript
+  - JQuery
  
 ## Implementation:
  ### Day 1:
