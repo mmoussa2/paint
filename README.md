@@ -34,14 +34,14 @@
         link.download = "image.png";
         link.href = image;
         link.click();
-
-      }
-    });
-   }
-  );
-  ```
+        }
+      });
+     }
+    );
+  
 
 ```
+
   undoPaint(){
     if(this.undoStack.length > 0){
       this.context.putImageData(this.undoStack[this.undoStack.length - 1], 0, 0);
