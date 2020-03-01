@@ -14,11 +14,12 @@
   - Javascript
   - JQuery
  
+ 
 
-    One of the challenges faced was to make undo, so i implemented stack to save image for each drawing,
-    and allowed to save the lasted three images 
+   One of the challenges faced was to make undo, so i implemented stack to save image for each drawing,
+   and allowed to save the lasted three images 
     
-    ```
+   ```
     
     document.querySelectorAll("[data-command]").forEach(
     item =>{
