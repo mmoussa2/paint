@@ -40,7 +40,7 @@
     );
   
 
-```
+  ```
 
   undoPaint(){
     if(this.undoStack.length > 0){
