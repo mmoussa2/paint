@@ -40,15 +40,15 @@
     );
   
 
-  ```
+   ```
 
-  undoPaint(){
+   undoPaint(){
     if(this.undoStack.length > 0){
       this.context.putImageData(this.undoStack[this.undoStack.length - 1], 0, 0);
       this.undoStack.pop();
     }else{
       return ;
     }
-  }
-  ```
+   }
+ 
     
