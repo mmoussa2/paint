@@ -18,10 +18,10 @@
     One of the challenges faced was to make undo, so i implemented stack to save image for each drawing,
     and allowed to save the lasted three images 
     
-    ```javascript
+    ```
     
     document.querySelectorAll("[data-command]").forEach(
-  item =>{
+    item =>{
     item.addEventListener("click", e =>{
       let command = item.getAttribute("data-command");
       if(command === 'undo'){
@@ -37,12 +37,11 @@
 
       }
     });
-  }
-);
+   }
+  );
+  ```
+
 ```
-
-```javascript
-
   undoPaint(){
     if(this.undoStack.length > 0){
       this.context.putImageData(this.undoStack[this.undoStack.length - 1], 0, 0);
