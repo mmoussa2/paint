@@ -1,7 +1,10 @@
 # Paint
-  Can draw and erase on board, have option to select color, size of pen,
-  and save an image, and there is rest button to wipe the board  
+## Background and Overview
+  Can draw and erase on board with JavaScript, have option to select many tool like color, size of pen, shapes
+  and save as image, In addition to undo and rest button to wipe the board  
   [Live Demo](https://mmoussa2.github.io/paint/)
+  
+  ![](images/image.png)
 
 ## Technologies:
   - HTML
