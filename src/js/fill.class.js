@@ -4,13 +4,15 @@ export default class Fill{
    constructor(canvas, point, color){
      this.context = canvas.getContext("2d");
      this.imageData = this.context.getImageData(0, 0, this.context.canvas.width, this.context.canvas.height);
-      
+    
      const targetColor = this.getPixel(point);
+
+     console.log(targetColor)
      const fillColor = this.hexToRgba(color);
 
       this.fillStack = [];
-     this.floodFill(point, targetColor, fillColor);
-      this.fillColor();
+   //   this.floodFill(point, targetColor, fillColor);
+   //    this.fillColor();
     }
 
    floodFill(point,targetColor, fillColor){
